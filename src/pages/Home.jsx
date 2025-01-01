@@ -9,9 +9,10 @@ import {
   Container,
   Text,
   Flex,
-  Image,
-  useColorModeValue
+  useColorModeValue,
+  Icon
 } from '@chakra-ui/react';
+import { PhoneIcon } from '@chakra-ui/icons';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -52,16 +53,12 @@ function Home() {
           <Flex
             justify="center"
             align="center"
-            bgGradient="linear(to-b, blue.500, purple.600)"
+            bg="blue.500"
             borderRadius="full"
-            p={4}
+            p={6}
             boxShadow="md"
           >
-            <Image
-              src="https://clube.ai/wp-content/uploads/2024/12/LOGO.png"
-              alt="Clube.AI Logo"
-              boxSize="80px"
-            />
+            <Icon as={PhoneIcon} w={12} h={12} color="white" />
           </Flex>
           <Heading size="xl" color="blue.600">
             Bem-vindo ao Clube.AI

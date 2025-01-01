@@ -10,8 +10,10 @@ import {
   Heading,
   useColorModeValue,
   Flex,
-  Button
+  Button,
+  Icon
 } from '@chakra-ui/react';
+import { PhoneIcon } from '@chakra-ui/icons';
 import { fetchQRCode } from '../services/api';
 
 function ClientPortal() {
@@ -62,16 +64,12 @@ function ClientPortal() {
         <Flex
           justify="center"
           align="center"
-          bgGradient="linear(to-b, blue.500, purple.600)"
+          bg="blue.500"
           borderRadius="full"
-          p={4}
+          p={6}
           boxShadow="md"
         >
-          <Image
-            src="https://clube.ai/wp-content/uploads/2024/12/LOGO.png"
-            alt="Clube.AI Logo"
-            boxSize="80px"
-          />
+          <Icon as={PhoneIcon} w={12} h={12} color="white" />
         </Flex>
         <Heading size="lg" color="blue.600">
           Clube.AI - Conexão WhatsApp
