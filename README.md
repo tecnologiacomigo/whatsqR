@@ -1,1 +1,1 @@
-# whatsqR
+# WhatsApp Manager

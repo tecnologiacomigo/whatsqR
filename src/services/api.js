@@ -7,6 +7,6 @@ const api = axios.create({
   }
 })
 
-export const connectInstance = (instance) => api.get(`/instance/connect/${instance}`)
+export const fetchQRCode = (phone) => api.get(`/instance/connect/${phone}`);
 
-export default api
+export default api;
